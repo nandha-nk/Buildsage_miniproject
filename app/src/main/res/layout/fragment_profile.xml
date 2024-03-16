@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_profile"
+    tools:layout='@layout/fragment_profile'
+    android:background='@color/background_color'>
+
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:src="@drawable/btn_custom" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="280dp"
+        android:text="My Details" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="350dp"
+        android:text="Favourites" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="420dp"
+        android:text="Settings" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="490dp"
+        android:text="Logout" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="675dp"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="50dp"
+            android:layout_height="32dp"
+            android:src="@drawable/menu1"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="50dp"
+            android:layout_height="32dp"
+            android:src="@drawable/tool"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="50dp"
+            android:layout_height="32dp"
+            android:src="@drawable/profile"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="290dp"/>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="194dp"
+        android:src="@drawable/myprofile"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:gravity="center"
+        android:text="BUILD SAGE"
+        android:textColor="@color/background_color"
+        android:textSize="40dp" />
+</FrameLayout>

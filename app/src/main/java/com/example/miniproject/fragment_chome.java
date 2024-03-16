@@ -1,0 +1,45 @@
+package com.example.miniproject;
+
+import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+
+
+public class fragment_chome extends Fragment {
+
+    public fragment_chome(){}
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+
+        View rootView = inflater.inflate(R.layout.fragment_chome, container, false);
+
+        Button btnRegister = rootView.findViewById(R.id.toolview);
+
+
+        btnRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
+
+                transaction.replace(R.id.fragment_container, new fragment_proff());
+
+                transaction.addToBackStack(null);
+
+
+                transaction.commit();
+            }
+        });
+
+
+        return rootView;
+    }
+    }
